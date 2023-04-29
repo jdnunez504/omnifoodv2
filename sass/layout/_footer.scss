@@ -1,0 +1,63 @@
+.footer {
+  background-color: darken($color-neutral-gray, 15%);
+  padding: 4rem 0;
+
+  &__nav {
+    font-size: 2rem;
+    list-style: none;
+    float:left;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: darken($color-neutral-white, 30%);
+    text-decoration: none;
+    transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-orange;
+  }
+
+  .social {
+    &__nav {
+      font-size: 2rem;
+      list-style: none;
+      float: right;
+    }
+
+    &__item {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    &__link:link,
+    &__link:visited {
+      color: darken($color-neutral-white, 30%);
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: $color-primary-orange;
+    }
+  }
+
+  .copy {
+    font-size: 1.6rem;
+    text-align: center;
+    color: darken($color-neutral-white, 30%);
+    margin-top: 2rem;
+  }
+}

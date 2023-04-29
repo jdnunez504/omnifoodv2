@@ -1,0 +1,50 @@
+.details {
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+  &__icon {
+    float: left;
+    font-size: 2.5rem;
+    line-height: 1;
+    width: 2.5rem;
+    margin-right: 1rem;
+    color: $color-primary-orange;
+    text-align: center;
+  }
+
+  .ion-ios-person,
+  .ion-social-twitter {
+    margin-top: .3rem;
+  }
+
+  &__description {
+    float: left;
+    padding-top: .3rem;
+  }
+
+  &__social:link,
+  &__social:visited {
+    float: left;
+    color: $color-primary-orange;
+    padding-top: .3rem;
+    text-decoration: none;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid $color-primary-orange;
+    transition: all .2s;
+  }
+  &__social:hover,
+  &__social:active {
+    color: $color-neutral-gray;
+    border-bottom: 1px solid transparent;
+  }
+}

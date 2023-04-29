@@ -1,0 +1,17 @@
+.feature {
+  &__heading {
+
+  }
+
+  &__description {
+    font-size: 2.1rem;
+    line-height: 1.45;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    display: block;
+    color: $color-primary-orange;
+    margin-bottom: 1rem;
+  }
+}

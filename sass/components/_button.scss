@@ -1,0 +1,45 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 20rem;
+    transition: all .2s;
+  }
+
+  &--full {
+    &:link,
+    &:visited {
+      background-color: $color-primary-orange;
+      border: .1rem solid $color-primary-orange;
+      color: $color-neutral-white;
+      margin-right: 1.5rem;
+    }
+    &:hover,
+    &:active {
+      border: .1rem solid darken($color-primary-orange, 15%);
+    }
+  }
+
+  &--ghost {
+    &:link,
+    &:visited {
+      border: .1rem solid $color-primary-orange;
+      color: $color-primary-orange;
+    }
+    &:hover,
+    &:active {
+      color: $color-neutral-white;
+      border: .1rem solid darken($color-primary-orange, 15%);
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-color: darken($color-primary-orange, 15%);
+  }
+
+}

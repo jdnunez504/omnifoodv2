@@ -1,0 +1,64 @@
+.plan {
+  font-size: 1.9rem;
+  &__box {
+    background-color: $color-neutral-white;
+    border-radius: .5rem;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 4px darken($color-neutral-white, 10%);
+  }
+  &__info {
+    padding: 1.2rem;
+    border-bottom: 1px solid darken($color-neutral-white, 15%);
+    background: darken($color-neutral-white, 2.5%);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  &__heading {}
+
+  &__price {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: $color-primary-orange;
+    & span {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+
+  &__meal {
+    font-size: 1.6rem;
+  }
+  &__details {
+    padding: 1.2rem;
+    border-bottom: 1px solid darken($color-neutral-white, 15%);
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding: .5rem 0;
+  }
+  &__icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.6rem;
+    color: $color-primary-orange;
+    text-align: center;
+  }
+  &__button {
+    text-align: center;
+    padding: 1.2rem;
+  }
+
+  & div {
+    //padding: 1.2rem;
+    //border-bottom: 1px solid darken($color-neutral-white, 15%);
+    &:last-child {
+      //border-bottom: none;
+    };
+  }
+}

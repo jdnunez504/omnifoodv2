@@ -1,0 +1,18 @@
+{
+  "name": "html-legacy-course---jschm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass sass/main.scss resources/css/style.css && sass vendors/sass/ionicons.scss vendors/css/ionicons.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "sass": "^1.62.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

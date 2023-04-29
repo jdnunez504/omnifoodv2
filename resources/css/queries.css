@@ -1,0 +1,133 @@
+/* Big tablets to 1200px (widths smaller than the 1140px) */
+@media only screen and (max-width: 1200px) {
+    .header__content {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+}
+
+/* Small tablets to big tablets: from 768 to 1023px */
+@media only screen and (max-width: 1024px) {
+    .heading-primary { font-size: 4.6rem; }
+    .heading-secondary { font-size: 3.2rem; }
+    .feature__description { font-size: 1.8rem; }
+    .works__description { font-size: 1.8rem; }
+    section { padding: 60px 0; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .works__img { width: 50%; }
+    .works__left,
+    .works__right { margin-top: 1rem; }
+    .works__step { margin-bottom: 4rem ; }
+    .works__step:last-of-type { margin-bottom: 6rem; }
+    .works__btn { height: 4.5rem; }
+    .details__icon {
+        width: 1.7rem;
+        font-size: 1.7rem;
+        margin-right: .5rem;
+    }
+    .details__description,
+    .details__social { font-size: 1.5rem; }
+    .details__heading { font-size: 2rem; }
+    .testimonial__quote { font-size: 1.8rem; }
+    .plan__box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan__price { font-size: 3.5rem; }
+    .plan__item { font-size: 1.8rem; }
+    .plan__icon { font-size: 1.8rem; }
+
+    .form-section__contact-form { width: 80%; }
+
+    .footer__nav { font-size: 1.7rem; }
+    .footer__item:not(:last-child) { margin-right: 1rem; }
+    .footer .copy { font-size: 1.3rem}
+}
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    .row,
+    .header__content { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .navigation__list { display: none; }
+
+    .heading-primary { font-size: 3rem; }
+    .heading-secondary { font-size: 2.2rem; }
+    .heading-tertiary { font-size: 1.8rem; }
+
+    .feature__description { font-size: 1.6rem; }
+    .works__description { font-size: 1.6rem; }
+    section { padding: 30px 0; }
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .works__img { width: 50%; }
+    .works__left { text-align: center;}
+    .works__left,
+    .works__right {
+        margin-top: 1rem;
+    }
+    .works__number {
+        height: 3.75rem;
+        width: 3.75rem;
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        padding: .3rem;
+    }
+    .works__step { margin-bottom: 2.5rem ; }
+    .works__step:last-of-type { margin-bottom: 2.5rem; }
+    .works__btn { height: 4.5rem; }
+    .details__icon {
+        width: 1.6rem;
+        font-size: 1.6rem;
+        margin-right: .5rem;
+    }
+    .details__description,
+    .details__social { font-size: 1.4rem; }
+    .details__heading { font-size: 2rem; }
+    .testimonial__quote { font-size: 1.6rem; }
+    .plan__box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan__price { font-size: 3.5rem; }
+    .plan__item { font-size: 1.6rem; }
+    .plan__icon { font-size: 1.6rem; }
+
+    .form-section__contact-form { width: 80%; }
+
+    .footer__nav { font-size: 1.7rem; }
+    .footer__item:not(:last-child) { margin-right: 1rem; }
+    .footer .copy { font-size: 1.3rem}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .heading-primary { font-size: 2.4rem; }
+    .heading-secondary { font-size: 1.8rem; }
+    .heading-tertiary { font-size: 1.6rem; }
+    .header__content .btn--full {
+        margin-bottom: 1.6rem;
+    }
+    section { padding: 2.4rem 0; }
+    .long-copy {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .feature__icon { font-size: 4rem; }
+    .feature__description { font-size: 1.4rem; }
+    .details__item {
+        display: block;
+        height: 2.1rem;
+    }
+    .form-section__contact-form { width: 100%; }
+}
