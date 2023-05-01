@@ -1,15 +1,28 @@
 .navigation {
+  transition: all .2s;
   &__logo {
     height: 10rem;
     width: 10rem;
     float: left;
     margin-top: 2rem;
+    margin-right: 3.5rem;
   }
+
+  &__logo--black {
+    display: none;
+    height: 5rem;
+    width: auto;
+    float: left;
+    margin: .5rem 0;
+  }
+
   &__list {
+    font-size: 1.4rem;
     float: right;
     list-style: none;
     margin-top: 5.5rem;
   }
+
   &__item {
     display: inline-block;
     &:not(:last-child) {
@@ -23,7 +36,7 @@
       color: $color-neutral-white;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 1.8rem;
+      //font-size: 1.8rem;
       border-bottom: .2rem solid transparent;
       transition: all .3s;
     }
@@ -32,4 +45,53 @@
       border-bottom: .2rem solid $color-primary-orange;
     }
   }
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba($color-neutral-white, .98);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  z-index: 999;
+
+  .navigation__link {
+    &:link,
+    &:visited {
+      padding: 1.7rem 0;
+      color: $color-neutral-gray;
+      border-bottom: .3rem solid transparent;
+      transition: all .3s;
+    }
+    &:hover,
+    &:active {
+      border-bottom: .3rem solid $color-primary-orange;
+    }
+  }
+
+  .navigation__logo {
+    display: none;
+  }
+
+  .navigation__logo--black {
+    display: block;
+  }
+
+  .navigation__list {
+    margin-top: 2rem;
+    //margin-left: 2rem;
+  }
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 3rem;
+  color: $color-neutral-white;
 }

@@ -57,8 +57,38 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
+
     .navigation__list { display: none; }
 
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .navigation__list {
+        font-size: 1.6rem;
+        float: left;
+        margin-top: 3.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .navigation__item {
+        display: block;
+    }
+
+    .navigation__link:link,
+    .navigation__link:visited {
+        display: block;
+        border: 0;
+        padding: 1rem 0;
+    }
+
+    .stuck .navigation__list { margin-top: 1.8rem; }
+
+    .stuck .navigation__link:link,
+    .stuck .navigation__link:visited { padding: 1rem 0; }
+
+    .stuck .mobile-nav-icon { margin-top: 1rem; }
+    .stuck .mobile-nav-icon i { color: #555; }
     .heading-primary { font-size: 3rem; }
     .heading-secondary { font-size: 2.2rem; }
     .heading-tertiary { font-size: 1.8rem; }

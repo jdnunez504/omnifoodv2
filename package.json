@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "sass sass/main.scss resources/css/style.css && sass vendors/sass/ionicons.scss vendors/css/ionicons.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css"
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' resources/css/style.css -o resources/css/style.css"
   },
   "author": "",
   "license": "ISC",
